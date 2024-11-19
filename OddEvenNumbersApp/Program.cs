@@ -26,18 +26,8 @@ internal class Program
         Console.Write(" ]");
         Console.WriteLine();
     }
-    public static bool IsEven(int number) 
-    { 
-        if(number %2==0)
-            return true;
-        else
-            return false;    
-    }
-    public static bool IsOdd(int number)
-    {
-        if (number % 2 != 0)
-            return true;
-        else
-            return false;
-    }
+    public static bool IsEven(int number) => number % 2 == 0;
+
+    public static bool IsOdd(int number) => !IsEven(number);
+
 }
